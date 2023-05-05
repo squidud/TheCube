@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cube</title>
+</head>
+<body>
+  <div><br><br><br><br><br><br><br></div>
+  <div class="cube-container">
+  <div class="cube">
+    <div class="face front"><img id="frontS" ></div>
+    <div class="face back"><img id="backS">></div>
+    <div class="face left"><img id="leftS"></div>
+    <div class="face right"><img id="rightS"></div>
+    <div class="face top"><img id="topS"></div>
+    <div class="face bottom"><img id="bottomS"></div>
+  </div>
+</div>
+  <div><br><br><br><br><br><br><br><br><br></div>
+ <div style="text-align: center">
+  Show complex settings? <input type="checkbox" id="isComplex" onclick="showHide()">
+  <div id="simpleSettings">
+    <h3>Face Image</h3>
+     Image URL:<input type="text" id="allPic">
+     <br>
+  </div>
+  <div id="indevSettings">
+     <h3>Front</h3>
+     Image URL:<input type="text" id="frontPic">
+     <br>
+     <h3>Back</h3>
+     Image URL:<input type="text" id="backPic">
+     <br>
+     <h3>Left</h3>
+     Image URL:<input type="text" id="leftPic">
+     <br>
+     <h3>Right</h3>
+     Image URL:<input type="text" id="rightPic" name="filename">
+     <br>
+     <h3>Top</h3>
+     Image URL:<input type="text" id="topPic" name="filename">
+     <br>
+     <h3>Bottom</h3>
+     Image URL:<input type="text" id="bottomPic" name="filename"><br>
+    Transparency: <input type="range" min="1" max="10" value="5" class="slider" id="transparency">
+     <br>
+   </div>
+   <br>
+   <button onClick="makeCube()" style="font-size: 30px">cube.</button>
+  </div>
+
+</body>
+</html>
